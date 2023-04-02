@@ -31,25 +31,28 @@ public class Main {
         }
     }
     public int deliveryDistance (){
-        return deliveryDistance(33);
-    }
+         deliveryDistance(95);
+         int day=0;
+         return day;
+         }
 
     public int  deliveryDistance(int deliveryDistance) {
         System.out.println("Задача № 3");
-        if (deliveryDistance <= 20) {
-            System.out.println("Потребуется день что бы доставить груз на " + deliveryDistance + " км.");
+        int day=0;
+        if (deliveryDistance <= 20 ) {
+            System.out.println("Потребуется один " + 1+day + " что бы доставить груз на " + deliveryDistance + " км.");
         } else if
         (deliveryDistance > 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется  2 дня для доставки на " + deliveryDistance + " км.");
+            System.out.println("Потребуется  " + 2+day  + " для доставки на " + deliveryDistance + " км.");
         } else if
         (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется  3 дня для доставки на " + deliveryDistance + " км.");
+            System.out.println("Потребуется   " + 3+day + " для доставки на " + deliveryDistance + " км.");
         } else {
             System.out.println("Доставка нет на " + deliveryDistance + " км. слишком большое расстояние");
         }
-        return deliveryDistance;
-}
-}
+return day;
+
+}}
 
 
 
