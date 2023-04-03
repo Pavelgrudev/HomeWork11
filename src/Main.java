@@ -47,9 +47,11 @@ public class Main {
         (deliveryDistance >= 60 && deliveryDistance <= 100) {
             day=day+3;
         } else {
-            System.out.println("Нужно " +day+ "д(ень)ня что-бы доставить карту");}
+            System.out.println();}
+        System.out.println(day);
         return day;
-    }}
+
+        }}
 
 
 
