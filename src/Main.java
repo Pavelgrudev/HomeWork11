@@ -27,33 +27,29 @@ public class Main {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
             } else {
                 System.out.println("Установите версию приложения для Android по ссылке");
-            }
-        }
+            }}}
+    public int deliveryDistance () {
+        deliveryDistance(95);
+        int day = 0;
+        return day;
     }
-    public int deliveryDistance (){
-         deliveryDistance(95);
-         int day=0;
-         return day;
-         }
+
 
     public int  deliveryDistance(int deliveryDistance) {
         System.out.println("Задача № 3");
         int day=0;
-        if (deliveryDistance <= 20 ) {
-            System.out.println("Потребуется один " + 1+day + " что бы доставить груз на " + deliveryDistance + " км.");
+        if (deliveryDistance<=20) {
+            day=day+1;
         } else if
         (deliveryDistance > 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется  " + 2+day  + " для доставки на " + deliveryDistance + " км.");
+            day=day+2;
         } else if
         (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется   " + 3+day + " для доставки на " + deliveryDistance + " км.");
+            day=day+3;
         } else {
-            System.out.println("Доставка нет на " + deliveryDistance + " км. слишком большое расстояние");
-        }
-return day;
-
-}}
-
+            System.out.println();}
+        return day;
+    }}
 
 
 
