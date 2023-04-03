@@ -3,7 +3,10 @@ public class Main {
     public static void main(String[] args) {
         checkIsLeapYear(2021);
         whichVersionToInstall(2023);
-        }
+       if ( calculateDays(95)==0);{
+        System.out.println("Доставка займёт " + (calculateDays(95)+ " дней "));
+       }
+    }
 
     public static void checkIsLeapYear(int year) {
         System.out.println("задача № 1");
@@ -28,35 +31,20 @@ public class Main {
             } else {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }}}
-    public int deliveryDistance () {
-        deliveryDistance(95);
-        int day = 0;
-        return day;
-    }
 
-
-    public int  deliveryDistance(int deliveryDistance) {
-        System.out.println("Задача № 3");
-        int day=0;
-        if (deliveryDistance<=20) {
-            day=day+1;
-        } else if
-        (deliveryDistance > 20 && deliveryDistance < 60) {
-            day=day+2;
-        } else if
-        (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            day=day+3;
+    public static int calculateDays(int distance) {
+        int days = 1;
+        if (distance < 20) {
+            return days;
+        } else if (distance >= 20 && distance < 60) {
+           days = days + 1;
+           return days;
+        } else if (distance >= 60 && distance <= 100) {
+           days = days + 2;
+            return days;
         } else {
-            System.out.println();}
-        System.out.println(day);
-        return day;
-
-        }}
-
-
-
-
-
+            return-1 ;
+         }}}
 
 
 
