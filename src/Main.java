@@ -4,12 +4,11 @@ public class Main {
     public static void main(String[] args) {
         checkIsLeapYear(2021);
         whichVersionToInstall(2023);
-        calculateDays();
-        if(calculateDays()==-1);{
-        System.out.println("доставки нет")}else{
-            System.out.println("Доставка займёт " + calculateDays()+ " дней ");
-       }
-    }
+        if(calculateDays()<=0){
+            System.out.println("доставки нет");
+        } else if (calculateDays()>0) {
+            System.out.println("Доставка займёт " + calculateDays()+ " дней ");}}
+
 
     public static void checkIsLeapYear(int year) {
         System.out.println("задача № 1");
