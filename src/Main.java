@@ -1,10 +1,13 @@
+import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
         checkIsLeapYear(2021);
         whichVersionToInstall(2023);
-       if ( calculateDays(95)==0);{
-        System.out.println("Доставка займёт " + (calculateDays(95)+ " дней "));
+        calculateDays();
+        if(calculateDays()==-1);{
+        System.out.println("доставки нет")}else{
+            System.out.println("Доставка займёт " + calculateDays()+ " дней ");
        }
     }
 
@@ -32,7 +35,8 @@ public class Main {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }}}
 
-    public static int calculateDays(int distance) {
+    public static int calculateDays() {
+        int distance=95;
         int days = 1;
         if (distance < 20) {
             return days;
